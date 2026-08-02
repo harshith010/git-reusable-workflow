@@ -1,0 +1,6 @@
+name: use_Reusable
+on:
+    push:
+jobs:
+  use_reusable:
+    uses: ./.github/workflows/reusable-workflow.yaml
