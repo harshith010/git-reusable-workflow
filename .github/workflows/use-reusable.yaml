@@ -4,3 +4,5 @@ on:
 jobs:
   use_reusable:
     uses: ./.github/workflows/reusable_demo.yml
+    with:
+      name: "Harshith"

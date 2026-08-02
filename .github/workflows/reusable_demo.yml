@@ -1,9 +1,13 @@
 name: Reusable_workflow_demo
 on: 
   workflow_call:
+    inputs:
+      name:
+        required: true
+        type: string
 jobs:
   reusable_workflow:
     runs-on: ubuntu-latest
     steps:
       - name: This workflow can be Reusable
-        run: echo "You are using Re Usable workFlow"
+        run: echo "Hi ${{ inputs.name }} are using Re Usable workFlow"
