@@ -3,5 +3,4 @@ on:
     push:
 jobs:
   use_reusable:
-#    uses: ./.github/workflows/reusable-demo.yml
-    uses: git-reusable-workflow/.github/workflows/reusable_demo.yml
+    uses: ./.github/workflows/reusable-demo.yml
